@@ -2,12 +2,14 @@
 
 An event-driven, multi-agent pipeline that ingests financial transactions via Apache Kafka, processes them through three specialized AI agents — PII sanitization, semantic classification via vector RAG, and graph-based fraud detection via Neo4j GraphRAG — and outputs fully enriched, compliance-ready transactions in real time.
 
+> **Evaluation harness and results:** see branch [`eval/capability-conditioned`](https://github.com/plsyz/finstream-ai/tree/eval/capability-conditioned) — capability-conditioned audit of the three agents, PII hand-off check, and the full results (`eval/results/analysis/summary.md`).
+
 ### Key Highlights
 
 - **Multi-agent architecture** — three autonomous agents, each with a single responsibility, chained sequentially through a Kafka-driven orchestrator
 - **Dual RAG pattern** — combines vector similarity search (pgvector) for transaction classification with knowledge graph traversal (Neo4j) for fraud detection in a single pipeline
 - **Production resilience** — Resilience4j circuit breakers and retry policies on the fraud detection agent; graceful degradation to manual review when infrastructure is degraded
-- **Privacy-first design** — PII is masked deterministically before any data reaches external LLM services or downstream consumers
+- **Privacy-first output** — PII is masked deterministically in every emitted record. *Note:* on this branch the LLM agents still receive the raw transaction; the `eval/capability-conditioned` branch adds a `sanitize-before-llm` mode that closes this gap (see the evaluation report linked above).
 - **Event-driven throughput** — Kafka-partitioned ingestion with async processing; supports both real-time streaming and synchronous request-response modes
 
 ### Tech at a Glance
