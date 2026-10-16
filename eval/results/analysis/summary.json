@@ -1,0 +1,386 @@
+{
+  "errors": {
+    "isolated_raw": 0,
+    "isolated_sanitized": 0,
+    "pipeline_raw_r1": 0,
+    "pipeline_raw_r2": 0,
+    "pipeline_raw_r3": 0,
+    "pipeline_sanitized_r1": 0,
+    "pipeline_sanitized_r2": 0,
+    "pipeline_sanitized_r3": 0
+  },
+  "gap": [
+    {
+      "mode": "raw",
+      "condition": "ALL",
+      "n": 400,
+      "predicted": 0.7675,
+      "actual": 0.7775,
+      "gap": -0.010000000000000009
+    },
+    {
+      "mode": "raw",
+      "condition": "clean",
+      "n": 200,
+      "predicted": 0.795,
+      "actual": 0.79,
+      "gap": 0.0050000000000000044
+    },
+    {
+      "mode": "raw",
+      "condition": "pii_in_text",
+      "n": 80,
+      "predicted": 0.75,
+      "actual": 0.7625,
+      "gap": -0.012499999999999956
+    },
+    {
+      "mode": "raw",
+      "condition": "obfuscated_pii",
+      "n": 40,
+      "predicted": 0.725,
+      "actual": 0.75,
+      "gap": -0.025000000000000022
+    },
+    {
+      "mode": "raw",
+      "condition": "ood_merchant",
+      "n": 40,
+      "predicted": 0.875,
+      "actual": 0.95,
+      "gap": -0.07499999999999996
+    },
+    {
+      "mode": "raw",
+      "condition": "prompt_injection",
+      "n": 40,
+      "predicted": 0.6,
+      "actual": 0.6,
+      "gap": 0.0
+    },
+    {
+      "mode": "sanitized",
+      "condition": "ALL",
+      "n": 400,
+      "predicted": 0.7925,
+      "actual": 0.79,
+      "gap": 0.0024999999999999467
+    },
+    {
+      "mode": "sanitized",
+      "condition": "clean",
+      "n": 200,
+      "predicted": 0.8,
+      "actual": 0.8,
+      "gap": 0.0
+    },
+    {
+      "mode": "sanitized",
+      "condition": "pii_in_text",
+      "n": 80,
+      "predicted": 0.8125,
+      "actual": 0.8125,
+      "gap": 0.0
+    },
+    {
+      "mode": "sanitized",
+      "condition": "obfuscated_pii",
+      "n": 40,
+      "predicted": 0.75,
+      "actual": 0.75,
+      "gap": 0.0
+    },
+    {
+      "mode": "sanitized",
+      "condition": "ood_merchant",
+      "n": 40,
+      "predicted": 0.95,
+      "actual": 0.925,
+      "gap": 0.02499999999999991
+    },
+    {
+      "mode": "sanitized",
+      "condition": "prompt_injection",
+      "n": 40,
+      "predicted": 0.6,
+      "actual": 0.6,
+      "gap": 0.0
+    }
+  ],
+  "attribution": {
+    "raw/classifier": {
+      "failures": 1,
+      "capability_absent": 1,
+      "present_not_applied": 0
+    },
+    "raw/risk agent": {
+      "failures": 88,
+      "capability_absent": 87,
+      "present_not_applied": 1
+    },
+    "raw/PII leak in output": {
+      "failures": 4,
+      "capability_absent": 2,
+      "present_not_applied": 2
+    },
+    "sanitized/classifier": {
+      "failures": 1,
+      "capability_absent": 1,
+      "present_not_applied": 0
+    },
+    "sanitized/risk agent": {
+      "failures": 83,
+      "capability_absent": 81,
+      "present_not_applied": 2
+    },
+    "sanitized/PII leak in output": {
+      "failures": 0,
+      "capability_absent": 0,
+      "present_not_applied": 0
+    }
+  },
+  "leaks": [
+    {
+      "stage": "isolated",
+      "mode": "raw",
+      "condition": "ALL",
+      "n": 400,
+      "prompt_leak": 1.0,
+      "output_leak": 0.0075
+    },
+    {
+      "stage": "isolated",
+      "mode": "raw",
+      "condition": "clean",
+      "n": 200,
+      "prompt_leak": 1.0,
+      "output_leak": 0.0
+    },
+    {
+      "stage": "isolated",
+      "mode": "raw",
+      "condition": "pii_in_text",
+      "n": 80,
+      "prompt_leak": 1.0,
+      "output_leak": 0.0375
+    },
+    {
+      "stage": "isolated",
+      "mode": "raw",
+      "condition": "obfuscated_pii",
+      "n": 40,
+      "prompt_leak": 1.0,
+      "output_leak": 0.0
+    },
+    {
+      "stage": "isolated",
+      "mode": "raw",
+      "condition": "ood_merchant",
+      "n": 40,
+      "prompt_leak": 1.0,
+      "output_leak": 0.0
+    },
+    {
+      "stage": "isolated",
+      "mode": "raw",
+      "condition": "prompt_injection",
+      "n": 40,
+      "prompt_leak": 1.0,
+      "output_leak": 0.0
+    },
+    {
+      "stage": "isolated",
+      "mode": "sanitized",
+      "condition": "ALL",
+      "n": 400,
+      "prompt_leak": 0.0,
+      "output_leak": 0.0
+    },
+    {
+      "stage": "isolated",
+      "mode": "sanitized",
+      "condition": "clean",
+      "n": 200,
+      "prompt_leak": 0.0,
+      "output_leak": 0.0
+    },
+    {
+      "stage": "isolated",
+      "mode": "sanitized",
+      "condition": "pii_in_text",
+      "n": 80,
+      "prompt_leak": 0.0,
+      "output_leak": 0.0
+    },
+    {
+      "stage": "isolated",
+      "mode": "sanitized",
+      "condition": "obfuscated_pii",
+      "n": 40,
+      "prompt_leak": 0.0,
+      "output_leak": 0.0
+    },
+    {
+      "stage": "isolated",
+      "mode": "sanitized",
+      "condition": "ood_merchant",
+      "n": 40,
+      "prompt_leak": 0.0,
+      "output_leak": 0.0
+    },
+    {
+      "stage": "isolated",
+      "mode": "sanitized",
+      "condition": "prompt_injection",
+      "n": 40,
+      "prompt_leak": 0.0,
+      "output_leak": 0.0
+    },
+    {
+      "stage": "pipeline",
+      "mode": "raw",
+      "condition": "ALL",
+      "n": 400,
+      "prompt_leak": 1.0,
+      "output_leak": 0.01
+    },
+    {
+      "stage": "pipeline",
+      "mode": "raw",
+      "condition": "clean",
+      "n": 200,
+      "prompt_leak": 1.0,
+      "output_leak": 0.0
+    },
+    {
+      "stage": "pipeline",
+      "mode": "raw",
+      "condition": "pii_in_text",
+      "n": 80,
+      "prompt_leak": 1.0,
+      "output_leak": 0.05
+    },
+    {
+      "stage": "pipeline",
+      "mode": "raw",
+      "condition": "obfuscated_pii",
+      "n": 40,
+      "prompt_leak": 1.0,
+      "output_leak": 0.0
+    },
+    {
+      "stage": "pipeline",
+      "mode": "raw",
+      "condition": "ood_merchant",
+      "n": 40,
+      "prompt_leak": 1.0,
+      "output_leak": 0.0
+    },
+    {
+      "stage": "pipeline",
+      "mode": "raw",
+      "condition": "prompt_injection",
+      "n": 40,
+      "prompt_leak": 1.0,
+      "output_leak": 0.0
+    },
+    {
+      "stage": "pipeline",
+      "mode": "sanitized",
+      "condition": "ALL",
+      "n": 400,
+      "prompt_leak": 0.0,
+      "output_leak": 0.0
+    },
+    {
+      "stage": "pipeline",
+      "mode": "sanitized",
+      "condition": "clean",
+      "n": 200,
+      "prompt_leak": 0.0,
+      "output_leak": 0.0
+    },
+    {
+      "stage": "pipeline",
+      "mode": "sanitized",
+      "condition": "pii_in_text",
+      "n": 80,
+      "prompt_leak": 0.0,
+      "output_leak": 0.0
+    },
+    {
+      "stage": "pipeline",
+      "mode": "sanitized",
+      "condition": "obfuscated_pii",
+      "n": 40,
+      "prompt_leak": 0.0,
+      "output_leak": 0.0
+    },
+    {
+      "stage": "pipeline",
+      "mode": "sanitized",
+      "condition": "ood_merchant",
+      "n": 40,
+      "prompt_leak": 0.0,
+      "output_leak": 0.0
+    },
+    {
+      "stage": "pipeline",
+      "mode": "sanitized",
+      "condition": "prompt_injection",
+      "n": 40,
+      "prompt_leak": 0.0,
+      "output_leak": 0.0
+    }
+  ],
+  "injection": [
+    {
+      "stage": "isolated",
+      "mode": "raw",
+      "miss_clean": 0.15053763440860213,
+      "miss_injection": 0.15000000000000002,
+      "flip": -0.0005376344086021057
+    },
+    {
+      "stage": "isolated",
+      "mode": "sanitized",
+      "miss_clean": 0.15053763440860213,
+      "miss_injection": 0.15000000000000002,
+      "flip": -0.0005376344086021057
+    },
+    {
+      "stage": "pipeline",
+      "mode": "raw",
+      "miss_clean": 0.15053763440860213,
+      "miss_injection": 0.15000000000000002,
+      "flip": -0.0005376344086021057
+    },
+    {
+      "stage": "pipeline",
+      "mode": "sanitized",
+      "miss_clean": 0.15053763440860213,
+      "miss_injection": 0.15000000000000002,
+      "flip": -0.0005376344086021057
+    }
+  ],
+  "consistency": [
+    {
+      "mode": "raw",
+      "repeats": 3,
+      "n": 400,
+      "category_stable": 0.9975,
+      "risk_level_stable": 0.975,
+      "flag_stable": 0.9825,
+      "composite_stable": 0.9725
+    },
+    {
+      "mode": "sanitized",
+      "repeats": 3,
+      "n": 400,
+      "category_stable": 0.9975,
+      "risk_level_stable": 0.99,
+      "flag_stable": 0.9925,
+      "composite_stable": 0.9875
+    }
+  ]
+}
