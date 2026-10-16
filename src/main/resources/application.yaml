@@ -61,6 +61,13 @@ finstream:
     topics:
       raw-transactions: raw-transactions
       processed-transactions: processed-transactions
+  pipeline:
+    # When true, the LLM-backed agents (2 and 3) receive the masked + scrubbed
+    # transaction instead of the raw record. Off by default (original behaviour).
+    sanitize-before-llm: ${FINSTREAM_SANITIZE_BEFORE_LLM:false}
+  eval:
+    # Exposes /api/eval/** (isolated agent calls + store seeding). Dev/eval only.
+    enabled: ${FINSTREAM_EVAL_ENABLED:false}
 
 resilience4j:
   circuitbreaker:

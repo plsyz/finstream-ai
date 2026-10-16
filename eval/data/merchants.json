@@ -1,0 +1,743 @@
+[
+  {
+    "merchantId": "MERCHANT-CL-001",
+    "name": "TechCorp Solutions",
+    "category": "Software",
+    "country": "Germany",
+    "cc": "DE",
+    "registeredAddress": "35 Via Roma, Germany",
+    "ipAddress": "141.76.114.45",
+    "flagged": false,
+    "flagReason": "",
+    "ring": null,
+    "in_graph": true,
+    "hops": null,
+    "gt_flagged": false,
+    "gt_risk": [
+      "LOW",
+      "LOW"
+    ]
+  },
+  {
+    "merchantId": "MERCHANT-CL-002",
+    "name": "Nimbus Cloud GmbH",
+    "category": "Software",
+    "country": "Germany",
+    "cc": "DE",
+    "registeredAddress": "26 Hafenstr, Germany",
+    "ipAddress": "136.69.14.43",
+    "flagged": false,
+    "flagReason": "",
+    "ring": null,
+    "in_graph": true,
+    "hops": null,
+    "gt_flagged": false,
+    "gt_risk": [
+      "LOW",
+      "LOW"
+    ]
+  },
+  {
+    "merchantId": "MERCHANT-CL-003",
+    "name": "Bistro Parisien",
+    "category": "Meals & Entertainment",
+    "country": "France",
+    "cc": "FR",
+    "registeredAddress": "187 Main St, France",
+    "ipAddress": "176.1.191.229",
+    "flagged": false,
+    "flagReason": "",
+    "ring": null,
+    "in_graph": true,
+    "hops": null,
+    "gt_flagged": false,
+    "gt_risk": [
+      "LOW",
+      "LOW"
+    ]
+  },
+  {
+    "merchantId": "MERCHANT-CL-004",
+    "name": "Trattoria Verde",
+    "category": "Meals & Entertainment",
+    "country": "Italy",
+    "cc": "IT",
+    "registeredAddress": "155 Via Roma, Italy",
+    "ipAddress": "92.145.105.171",
+    "flagged": false,
+    "flagReason": "",
+    "ring": null,
+    "in_graph": true,
+    "hops": null,
+    "gt_flagged": false,
+    "gt_risk": [
+      "LOW",
+      "LOW"
+    ]
+  },
+  {
+    "merchantId": "MERCHANT-CL-005",
+    "name": "Iberia Airlines",
+    "category": "Travel",
+    "country": "Spain",
+    "cc": "ES",
+    "registeredAddress": "165 Rua Nova, Spain",
+    "ipAddress": "152.101.120.31",
+    "flagged": false,
+    "flagReason": "",
+    "ring": null,
+    "in_graph": true,
+    "hops": null,
+    "gt_flagged": false,
+    "gt_risk": [
+      "LOW",
+      "LOW"
+    ]
+  },
+  {
+    "merchantId": "MERCHANT-CL-006",
+    "name": "Alpine Rail",
+    "category": "Travel",
+    "country": "Austria",
+    "cc": "AT",
+    "registeredAddress": "111 Via Roma, Austria",
+    "ipAddress": "89.16.129.155",
+    "flagged": false,
+    "flagReason": "",
+    "ring": null,
+    "in_graph": true,
+    "hops": null,
+    "gt_flagged": false,
+    "gt_risk": [
+      "LOW",
+      "LOW"
+    ]
+  },
+  {
+    "merchantId": "MERCHANT-CL-007",
+    "name": "Lex & Partner",
+    "category": "Professional Services",
+    "country": "Germany",
+    "cc": "DE",
+    "registeredAddress": "60 Main St, Germany",
+    "ipAddress": "122.58.143.131",
+    "flagged": false,
+    "flagReason": "",
+    "ring": null,
+    "in_graph": true,
+    "hops": null,
+    "gt_flagged": false,
+    "gt_risk": [
+      "LOW",
+      "LOW"
+    ]
+  },
+  {
+    "merchantId": "MERCHANT-CL-008",
+    "name": "Northwind Consulting",
+    "category": "Professional Services",
+    "country": "Netherlands",
+    "cc": "NL",
+    "registeredAddress": "81 Hafenstr, Netherlands",
+    "ipAddress": "196.36.65.198",
+    "flagged": false,
+    "flagReason": "",
+    "ring": null,
+    "in_graph": true,
+    "hops": null,
+    "gt_flagged": false,
+    "gt_risk": [
+      "LOW",
+      "LOW"
+    ]
+  },
+  {
+    "merchantId": "MERCHANT-CL-009",
+    "name": "OfficeDepot EU",
+    "category": "Office Supplies",
+    "country": "Netherlands",
+    "cc": "NL",
+    "registeredAddress": "134 Hafenstr, Netherlands",
+    "ipAddress": "202.24.228.204",
+    "flagged": false,
+    "flagReason": "",
+    "ring": null,
+    "in_graph": true,
+    "hops": null,
+    "gt_flagged": false,
+    "gt_risk": [
+      "LOW",
+      "LOW"
+    ]
+  },
+  {
+    "merchantId": "MERCHANT-CL-010",
+    "name": "PaperPlus",
+    "category": "Office Supplies",
+    "country": "Portugal",
+    "cc": "PT",
+    "registeredAddress": "195 Via Roma, Portugal",
+    "ipAddress": "115.122.20.73",
+    "flagged": false,
+    "flagReason": "",
+    "ring": null,
+    "in_graph": true,
+    "hops": null,
+    "gt_flagged": false,
+    "gt_risk": [
+      "LOW",
+      "LOW"
+    ]
+  },
+  {
+    "merchantId": "MERCHANT-CL-011",
+    "name": "EuroFX Brokers",
+    "category": "Financial Services",
+    "country": "Germany",
+    "cc": "DE",
+    "registeredAddress": "36 Main St, Germany",
+    "ipAddress": "41.196.79.162",
+    "flagged": false,
+    "flagReason": "",
+    "ring": null,
+    "in_graph": true,
+    "hops": null,
+    "gt_flagged": false,
+    "gt_risk": [
+      "LOW",
+      "LOW"
+    ]
+  },
+  {
+    "merchantId": "MERCHANT-CL-012",
+    "name": "Lisbon Credit Union",
+    "category": "Financial Services",
+    "country": "Portugal",
+    "cc": "PT",
+    "registeredAddress": "88 Main St, Portugal",
+    "ipAddress": "120.89.154.155",
+    "flagged": false,
+    "flagReason": "",
+    "ring": null,
+    "in_graph": true,
+    "hops": null,
+    "gt_flagged": false,
+    "gt_risk": [
+      "LOW",
+      "LOW"
+    ]
+  },
+  {
+    "merchantId": "MERCHANT-CL-013",
+    "name": "MediSupply AG",
+    "category": "Healthcare",
+    "country": "Austria",
+    "cc": "AT",
+    "registeredAddress": "161 Main St, Austria",
+    "ipAddress": "227.17.83.251",
+    "flagged": false,
+    "flagReason": "",
+    "ring": null,
+    "in_graph": true,
+    "hops": null,
+    "gt_flagged": false,
+    "gt_risk": [
+      "LOW",
+      "LOW"
+    ]
+  },
+  {
+    "merchantId": "MERCHANT-CL-014",
+    "name": "Clinica Sol",
+    "category": "Healthcare",
+    "country": "Spain",
+    "cc": "ES",
+    "registeredAddress": "24 Rua Nova, Spain",
+    "ipAddress": "17.141.248.220",
+    "flagged": false,
+    "flagReason": "",
+    "ring": null,
+    "in_graph": true,
+    "hops": null,
+    "gt_flagged": false,
+    "gt_risk": [
+      "LOW",
+      "LOW"
+    ]
+  },
+  {
+    "merchantId": "MERCHANT-CL-015",
+    "name": "Amazon EU",
+    "category": "Retail",
+    "country": "Germany",
+    "cc": "DE",
+    "registeredAddress": "17 Via Roma, Germany",
+    "ipAddress": "183.176.178.17",
+    "flagged": false,
+    "flagReason": "",
+    "ring": null,
+    "in_graph": true,
+    "hops": null,
+    "gt_flagged": false,
+    "gt_risk": [
+      "LOW",
+      "LOW"
+    ]
+  },
+  {
+    "merchantId": "MERCHANT-CL-016",
+    "name": "Galeries Nord",
+    "category": "Retail",
+    "country": "France",
+    "cc": "FR",
+    "registeredAddress": "33 Via Roma, France",
+    "ipAddress": "238.130.30.182",
+    "flagged": false,
+    "flagReason": "",
+    "ring": null,
+    "in_graph": true,
+    "hops": null,
+    "gt_flagged": false,
+    "gt_risk": [
+      "LOW",
+      "LOW"
+    ]
+  },
+  {
+    "merchantId": "MERCHANT-CL-017",
+    "name": "Stadtwerke Energie",
+    "category": "Utilities",
+    "country": "Germany",
+    "cc": "DE",
+    "registeredAddress": "48 Rua Nova, Germany",
+    "ipAddress": "158.64.82.83",
+    "flagged": false,
+    "flagReason": "",
+    "ring": null,
+    "in_graph": true,
+    "hops": null,
+    "gt_flagged": false,
+    "gt_risk": [
+      "LOW",
+      "LOW"
+    ]
+  },
+  {
+    "merchantId": "MERCHANT-CL-018",
+    "name": "EDP Comercial",
+    "category": "Utilities",
+    "country": "Portugal",
+    "cc": "PT",
+    "registeredAddress": "113 Main St, Portugal",
+    "ipAddress": "33.131.189.211",
+    "flagged": false,
+    "flagReason": "",
+    "ring": null,
+    "in_graph": true,
+    "hops": null,
+    "gt_flagged": false,
+    "gt_risk": [
+      "LOW",
+      "LOW"
+    ]
+  },
+  {
+    "merchantId": "MERCHANT-CL-019",
+    "name": "StreamBox",
+    "category": "Subscriptions",
+    "country": "Netherlands",
+    "cc": "NL",
+    "registeredAddress": "153 Via Roma, Netherlands",
+    "ipAddress": "156.85.54.210",
+    "flagged": false,
+    "flagReason": "",
+    "ring": null,
+    "in_graph": true,
+    "hops": null,
+    "gt_flagged": false,
+    "gt_risk": [
+      "LOW",
+      "LOW"
+    ]
+  },
+  {
+    "merchantId": "MERCHANT-CL-020",
+    "name": "FitLife Clubs",
+    "category": "Subscriptions",
+    "country": "Italy",
+    "cc": "IT",
+    "registeredAddress": "122 Main St, Italy",
+    "ipAddress": "116.126.227.17",
+    "flagged": false,
+    "flagReason": "",
+    "ring": null,
+    "in_graph": true,
+    "hops": null,
+    "gt_flagged": false,
+    "gt_risk": [
+      "LOW",
+      "LOW"
+    ]
+  },
+  {
+    "merchantId": "MERCHANT-RA-001",
+    "name": "QuickCash Exchange",
+    "category": "Financial Services",
+    "country": "Cyprus",
+    "cc": "CY",
+    "registeredAddress": "101 Via Roma, Cyprus",
+    "ipAddress": "11.176.232.213",
+    "flagged": true,
+    "flagReason": "Money laundering front - EUROPOL Op. Goldwash (2025), EUR 2.3M seized",
+    "ring": "A",
+    "in_graph": true,
+    "hops": 0,
+    "gt_flagged": true,
+    "gt_risk": [
+      "CRITICAL",
+      "CRITICAL"
+    ]
+  },
+  {
+    "merchantId": "MERCHANT-RA-002",
+    "name": "GlobalDigital Services",
+    "category": "Professional Services",
+    "country": "Estonia",
+    "cc": "EE",
+    "registeredAddress": "175 Rua Nova, Estonia",
+    "ipAddress": "177.246.168.108",
+    "flagged": false,
+    "flagReason": "",
+    "ring": "A",
+    "in_graph": true,
+    "hops": 1,
+    "gt_flagged": true,
+    "gt_risk": [
+      "HIGH",
+      "CRITICAL"
+    ]
+  },
+  {
+    "merchantId": "MERCHANT-RA-003",
+    "name": "MedTrade Supplies",
+    "category": "Healthcare",
+    "country": "Cyprus",
+    "cc": "CY",
+    "registeredAddress": "22 Via Roma, Cyprus",
+    "ipAddress": "190.239.242.104",
+    "flagged": false,
+    "flagReason": "",
+    "ring": "A",
+    "in_graph": true,
+    "hops": 1,
+    "gt_flagged": true,
+    "gt_risk": [
+      "HIGH",
+      "CRITICAL"
+    ]
+  },
+  {
+    "merchantId": "MERCHANT-RA-004",
+    "name": "Baltic Web Studio",
+    "category": "Software",
+    "country": "Estonia",
+    "cc": "EE",
+    "registeredAddress": "104 Rua Nova, Estonia",
+    "ipAddress": "221.192.51.218",
+    "flagged": false,
+    "flagReason": "",
+    "ring": "A",
+    "in_graph": true,
+    "hops": 2,
+    "gt_flagged": true,
+    "gt_risk": [
+      "MEDIUM",
+      "HIGH"
+    ]
+  },
+  {
+    "merchantId": "MERCHANT-RB-001",
+    "name": "LuxeGoods Outlet",
+    "category": "Retail",
+    "country": "Spain",
+    "cc": "ES",
+    "registeredAddress": "7 Hafenstr, Spain",
+    "ipAddress": "53.216.95.250",
+    "flagged": true,
+    "flagReason": "Chargebacks >15%, card-testing pattern (4000+ micro-transactions)",
+    "ring": "B",
+    "in_graph": true,
+    "hops": 0,
+    "gt_flagged": true,
+    "gt_risk": [
+      "CRITICAL",
+      "CRITICAL"
+    ]
+  },
+  {
+    "merchantId": "MERCHANT-RB-002",
+    "name": "Velvet Boutique",
+    "category": "Retail",
+    "country": "Spain",
+    "cc": "ES",
+    "registeredAddress": "90 Main St, Spain",
+    "ipAddress": "6.105.16.243",
+    "flagged": false,
+    "flagReason": "",
+    "ring": "B",
+    "in_graph": true,
+    "hops": 1,
+    "gt_flagged": true,
+    "gt_risk": [
+      "HIGH",
+      "CRITICAL"
+    ]
+  },
+  {
+    "merchantId": "MERCHANT-RB-003",
+    "name": "Sunset Travel Deals",
+    "category": "Travel",
+    "country": "Portugal",
+    "cc": "PT",
+    "registeredAddress": "55 Hafenstr, Portugal",
+    "ipAddress": "150.11.159.148",
+    "flagged": false,
+    "flagReason": "",
+    "ring": "B",
+    "in_graph": true,
+    "hops": 1,
+    "gt_flagged": true,
+    "gt_risk": [
+      "HIGH",
+      "CRITICAL"
+    ]
+  },
+  {
+    "merchantId": "MERCHANT-RB-004",
+    "name": "Iberic Gifts",
+    "category": "Retail",
+    "country": "Portugal",
+    "cc": "PT",
+    "registeredAddress": "187 Hafenstr, Portugal",
+    "ipAddress": "142.48.112.170",
+    "flagged": false,
+    "flagReason": "",
+    "ring": "B",
+    "in_graph": true,
+    "hops": 2,
+    "gt_flagged": true,
+    "gt_risk": [
+      "MEDIUM",
+      "HIGH"
+    ]
+  },
+  {
+    "merchantId": "MERCHANT-RC-001",
+    "name": "PrimeStream Plus",
+    "category": "Subscriptions",
+    "country": "Netherlands",
+    "cc": "NL",
+    "registeredAddress": "78 Hafenstr, Netherlands",
+    "ipAddress": "124.21.167.177",
+    "flagged": true,
+    "flagReason": "Unauthorised recurring billing complaints, 1,200 disputes in 2026",
+    "ring": "C",
+    "in_graph": true,
+    "hops": 0,
+    "gt_flagged": true,
+    "gt_risk": [
+      "CRITICAL",
+      "CRITICAL"
+    ]
+  },
+  {
+    "merchantId": "MERCHANT-RC-002",
+    "name": "CloudVault Backup",
+    "category": "Software",
+    "country": "Netherlands",
+    "cc": "NL",
+    "registeredAddress": "51 Main St, Netherlands",
+    "ipAddress": "4.183.66.177",
+    "flagged": false,
+    "flagReason": "",
+    "ring": "C",
+    "in_graph": true,
+    "hops": 1,
+    "gt_flagged": true,
+    "gt_risk": [
+      "HIGH",
+      "CRITICAL"
+    ]
+  },
+  {
+    "merchantId": "MERCHANT-RC-003",
+    "name": "EasyFit Online",
+    "category": "Subscriptions",
+    "country": "Germany",
+    "cc": "DE",
+    "registeredAddress": "47 Via Roma, Germany",
+    "ipAddress": "228.17.201.156",
+    "flagged": false,
+    "flagReason": "",
+    "ring": "C",
+    "in_graph": true,
+    "hops": 2,
+    "gt_flagged": true,
+    "gt_risk": [
+      "MEDIUM",
+      "HIGH"
+    ]
+  },
+  {
+    "merchantId": "MERCHANT-OOD-001",
+    "name": "Kestrel Analytics",
+    "category": "Software",
+    "country": "Germany",
+    "cc": "DE",
+    "registeredAddress": "",
+    "ipAddress": "",
+    "flagged": false,
+    "flagReason": "",
+    "ring": null,
+    "in_graph": false,
+    "hops": null,
+    "gt_flagged": false,
+    "gt_risk": [
+      "LOW",
+      "LOW"
+    ]
+  },
+  {
+    "merchantId": "MERCHANT-OOD-002",
+    "name": "Osteria Luna",
+    "category": "Meals & Entertainment",
+    "country": "Italy",
+    "cc": "IT",
+    "registeredAddress": "",
+    "ipAddress": "",
+    "flagged": false,
+    "flagReason": "",
+    "ring": null,
+    "in_graph": false,
+    "hops": null,
+    "gt_flagged": false,
+    "gt_risk": [
+      "LOW",
+      "LOW"
+    ]
+  },
+  {
+    "merchantId": "MERCHANT-OOD-003",
+    "name": "Fjord Ferries",
+    "category": "Travel",
+    "country": "Netherlands",
+    "cc": "NL",
+    "registeredAddress": "",
+    "ipAddress": "",
+    "flagged": false,
+    "flagReason": "",
+    "ring": null,
+    "in_graph": false,
+    "hops": null,
+    "gt_flagged": false,
+    "gt_risk": [
+      "LOW",
+      "LOW"
+    ]
+  },
+  {
+    "merchantId": "MERCHANT-OOD-004",
+    "name": "Hartmann Rechtsanwaelte",
+    "category": "Professional Services",
+    "country": "Germany",
+    "cc": "DE",
+    "registeredAddress": "",
+    "ipAddress": "",
+    "flagged": false,
+    "flagReason": "",
+    "ring": null,
+    "in_graph": false,
+    "hops": null,
+    "gt_flagged": false,
+    "gt_risk": [
+      "LOW",
+      "LOW"
+    ]
+  },
+  {
+    "merchantId": "MERCHANT-OOD-005",
+    "name": "Porto Dental",
+    "category": "Healthcare",
+    "country": "Portugal",
+    "cc": "PT",
+    "registeredAddress": "",
+    "ipAddress": "",
+    "flagged": false,
+    "flagReason": "",
+    "ring": null,
+    "in_graph": false,
+    "hops": null,
+    "gt_flagged": false,
+    "gt_risk": [
+      "LOW",
+      "LOW"
+    ]
+  },
+  {
+    "merchantId": "MERCHANT-OOD-006",
+    "name": "Nordic Pay AB",
+    "category": "Financial Services",
+    "country": "Germany",
+    "cc": "DE",
+    "registeredAddress": "",
+    "ipAddress": "",
+    "flagged": false,
+    "flagReason": "",
+    "ring": null,
+    "in_graph": false,
+    "hops": null,
+    "gt_flagged": false,
+    "gt_risk": [
+      "LOW",
+      "LOW"
+    ]
+  },
+  {
+    "merchantId": "MERCHANT-OOD-007",
+    "name": "Greenline Energy",
+    "category": "Utilities",
+    "country": "Austria",
+    "cc": "AT",
+    "registeredAddress": "",
+    "ipAddress": "",
+    "flagged": false,
+    "flagReason": "",
+    "ring": null,
+    "in_graph": false,
+    "hops": null,
+    "gt_flagged": false,
+    "gt_risk": [
+      "LOW",
+      "LOW"
+    ]
+  },
+  {
+    "merchantId": "MERCHANT-OOD-008",
+    "name": "Bookworm Digital",
+    "category": "Subscriptions",
+    "country": "France",
+    "cc": "FR",
+    "registeredAddress": "",
+    "ipAddress": "",
+    "flagged": false,
+    "flagReason": "",
+    "ring": null,
+    "in_graph": false,
+    "hops": null,
+    "gt_flagged": false,
+    "gt_risk": [
+      "LOW",
+      "LOW"
+    ]
+  }
+]

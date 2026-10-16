@@ -47,3 +47,7 @@ Thumbs.db
 
 ### Claude Code ###
 .claude/
+
+# evaluation runs
+eval/results/
+eval/.venv/

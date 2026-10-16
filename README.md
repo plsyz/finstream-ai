@@ -494,6 +494,17 @@ finstream-ai/
 
 ---
 
+## Evaluation
+
+`eval/` contains a capability-conditioned evaluation of the pipeline: each agent is scored in
+isolation and the full chain is scored on the same 400 labelled transactions, so that end-to-end
+failures can be attributed to a missing capability or to a capability that is present but not
+applied. It also audits the hand-off between the sanitizer and the LLM agents under two modes
+(`finstream.pipeline.sanitize-before-llm`, default `false` = original behaviour) and five stress
+conditions (PII in free text, obfuscated PII, out-of-distribution merchants, prompt injection).
+See [`eval/README.md`](eval/README.md) and [`EVAL-RUNBOOK.md`](EVAL-RUNBOOK.md).
+The `/api/eval/**` endpoints are enabled with `FINSTREAM_EVAL_ENABLED=true` and are not for production.
+
 ## Future Work
 
 - [ ] Seed Neo4j fraud graph via `ApplicationRunner` on startup (idempotent MERGE)

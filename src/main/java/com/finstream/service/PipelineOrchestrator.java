@@ -47,6 +47,15 @@ public class PipelineOrchestrator {
     @Value("${finstream.kafka.topics.processed-transactions}")
     private String processedTopic;
 
+    /**
+     * When true, Agent 2 and Agent 3 receive a sanitized copy of the transaction
+     * (masked PII fields + scrubbed description) instead of the raw record.
+     * Defaults to false to preserve the original pipeline behaviour; the eval
+     * harness toggles this per request to measure the difference.
+     */
+    @Value("${finstream.pipeline.sanitize-before-llm:false}")
+    private boolean sanitizeBeforeLlm;
+
     public PipelineOrchestrator(SanitizationAgent sanitizationAgent,
                                 SemanticClassifierAgent classifierAgent,
                                 GraphAnomalyAgent anomalyAgent,
@@ -71,12 +80,13 @@ public class PipelineOrchestrator {
         try {
             // Agent 1: Sanitize PII
             SanitizationAgent.SanitizedData sanitized = sanitizationAgent.sanitize(raw);
+            RawTransaction llmInput = prepareLlmInput(raw, sanitizeBeforeLlm);
 
             // Agent 2: Classify via Semantic RAG
-            SemanticClassifierAgent.ClassificationResult classification = classifierAgent.classify(raw);
+            SemanticClassifierAgent.ClassificationResult classification = classifierAgent.classify(llmInput);
 
             // Agent 3: Anomaly detection via GraphRAG
-            GraphAnomalyAgent.AnomalyResult anomaly = anomalyAgent.assessRisk(raw);
+            GraphAnomalyAgent.AnomalyResult anomaly = anomalyAgent.assessRisk(llmInput);
 
             // Assemble the ProcessedTransaction
             ProcessedTransaction processed = new ProcessedTransaction(
@@ -117,12 +127,22 @@ public class PipelineOrchestrator {
      * Useful for testing and demo purposes.
      */
     public ProcessedTransaction processTransactionSync(RawTransaction raw) {
-        log.info("=== Sync Pipeline START for transaction {} ===", raw.transactionId());
+        return processTransactionSync(raw, sanitizeBeforeLlm);
+    }
+
+    /**
+     * Synchronous processing with an explicit hand-off mode. Used by the eval harness
+     * to compare raw vs. sanitized hand-off to the LLM agents in a single run.
+     */
+    public ProcessedTransaction processTransactionSync(RawTransaction raw, boolean sanitizeInput) {
+        log.info("=== Sync Pipeline START for transaction {} (sanitizeBeforeLlm={}) ===",
+                raw.transactionId(), sanitizeInput);
         long startTime = System.currentTimeMillis();
 
         SanitizationAgent.SanitizedData sanitized = sanitizationAgent.sanitize(raw);
-        SemanticClassifierAgent.ClassificationResult classification = classifierAgent.classify(raw);
-        GraphAnomalyAgent.AnomalyResult anomaly = anomalyAgent.assessRisk(raw);
+        RawTransaction llmInput = prepareLlmInput(raw, sanitizeInput);
+        SemanticClassifierAgent.ClassificationResult classification = classifierAgent.classify(llmInput);
+        GraphAnomalyAgent.AnomalyResult anomaly = anomalyAgent.assessRisk(llmInput);
 
         ProcessedTransaction processed = new ProcessedTransaction(
                 raw.transactionId(),
@@ -149,5 +169,18 @@ public class PipelineOrchestrator {
                 raw.transactionId(), elapsed);
 
         return processed;
+    }
+
+    /**
+     * Builds the record that the LLM-backed agents will see. With sanitizeInput=false
+     * this is the raw transaction (original behaviour); with true it is the masked and
+     * scrubbed copy produced by Agent 1.
+     */
+    public RawTransaction prepareLlmInput(RawTransaction raw, boolean sanitizeInput) {
+        return sanitizeInput ? sanitizationAgent.sanitizeForLlm(raw) : raw;
+    }
+
+    public boolean isSanitizeBeforeLlm() {
+        return sanitizeBeforeLlm;
     }
 }

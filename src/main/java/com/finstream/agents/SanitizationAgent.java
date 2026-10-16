@@ -89,6 +89,73 @@ public class SanitizationAgent {
         return "***.***.***.***";
     }
 
+    // --- Free-text scrubbing -------------------------------------------------
+    //
+    // The four structured fields above are masked, but PII can also appear inside
+    // the free-text description ("refund to jane.smith@example.com", "IBAN DE89...").
+    // The original pipeline forwarded the raw description to the LLM agents unchanged.
+    // These helpers close that gap deterministically; see PipelineOrchestrator for the
+    // sanitize-before-llm switch that controls whether the LLM agents receive the
+    // scrubbed copy or the raw record.
+
+    private static final Pattern FREE_TEXT_EMAIL = Pattern.compile(
+            "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}");
+    private static final Pattern FREE_TEXT_IBAN = Pattern.compile(
+            "\\b[A-Z]{2}\\d{2}(?:[ ]?[A-Z0-9]{4}){2,7}(?:[ ]?[A-Z0-9]{1,4})?\\b");
+    private static final Pattern FREE_TEXT_IPV4 = Pattern.compile(
+            "\\b(?:\\d{1,3}\\.){3}\\d{1,3}\\b");
+    private static final Pattern FREE_TEXT_PHONE = Pattern.compile(
+            "(?<!\\w)(?:\\+\\d{1,3}[ -]?)?(?:\\(?\\d{2,4}\\)?[ -]?)\\d{3,4}[ -]?\\d{3,5}(?!\\w)");
+    private static final Pattern FREE_TEXT_CARD = Pattern.compile(
+            "\\b(?:\\d[ -]?){13,19}\\b");
+
+    /**
+     * Scrubs PII patterns from free text. In addition to pattern-based masking,
+     * the account holder's name tokens are masked wherever they appear, so that
+     * "Payment from Jane Smith" becomes "Payment from J*** S****".
+     */
+    String scrubFreeText(String text, String accountHolder) {
+        if (text == null || text.isBlank()) return text;
+        String scrubbed = text;
+        scrubbed = FREE_TEXT_EMAIL.matcher(scrubbed).replaceAll(m -> maskEmail(m.group()));
+        scrubbed = FREE_TEXT_IBAN.matcher(scrubbed).replaceAll(m -> maskAccountNumber(m.group().replace(" ", "")));
+        scrubbed = FREE_TEXT_CARD.matcher(scrubbed).replaceAll("****-****-****-****");
+        scrubbed = FREE_TEXT_IPV4.matcher(scrubbed).replaceAll(m -> maskIpAddress(m.group()));
+        scrubbed = FREE_TEXT_PHONE.matcher(scrubbed).replaceAll("+**-***-*****");
+        if (accountHolder != null && !accountHolder.isBlank()) {
+            for (String token : accountHolder.trim().split("\\s+")) {
+                if (token.length() < 3) continue;
+                Pattern nameToken = Pattern.compile("(?i)\\b" + Pattern.quote(token) + "\\b");
+                String masked = token.charAt(0) + "*".repeat(token.length() - 1);
+                scrubbed = nameToken.matcher(scrubbed).replaceAll(masked);
+            }
+        }
+        return scrubbed;
+    }
+
+    /**
+     * Returns a copy of the transaction that is safe to hand to the LLM agents:
+     * structured PII fields replaced with their masked forms and the free-text
+     * description scrubbed. Non-PII fields (merchant, amount, country, ...) are untouched.
+     */
+    public RawTransaction sanitizeForLlm(RawTransaction raw) {
+        return new RawTransaction(
+                raw.transactionId(),
+                maskName(raw.accountHolder()),
+                maskAccountNumber(raw.accountNumber()),
+                maskEmail(raw.email()),
+                raw.merchantName(),
+                raw.merchantId(),
+                raw.merchantCategory(),
+                raw.amount(),
+                raw.currency(),
+                raw.country(),
+                maskIpAddress(raw.ipAddress()),
+                scrubFreeText(raw.description(), raw.accountHolder()),
+                raw.timestamp()
+        );
+    }
+
     public record SanitizedData(
             String maskedAccountHolder,
             String maskedAccountNumber,

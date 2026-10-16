@@ -1,0 +1,498 @@
+[
+  {
+    "text": "Transaction: Annual license renewal - GitHub enterprise plan at TechCorp Solutions (MCC 5734) for 2726.37 EUR. Category: Software",
+    "metadata": {
+      "regulation": "transaction-history",
+      "category": "Software",
+      "merchantId": "MERCHANT-CL-001"
+    }
+  },
+  {
+    "text": "Transaction: SaaS platform fee Q2 - AWS at TechCorp Solutions (MCC 5734) for 3360.47 EUR. Category: Software",
+    "metadata": {
+      "regulation": "transaction-history",
+      "category": "Software",
+      "merchantId": "MERCHANT-CL-001"
+    }
+  },
+  {
+    "text": "Transaction: Developer seat upgrade for IntelliJ at Nimbus Cloud GmbH (MCC 5734) for 3989.03 EUR. Category: Software",
+    "metadata": {
+      "regulation": "transaction-history",
+      "category": "Software",
+      "merchantId": "MERCHANT-CL-002"
+    }
+  },
+  {
+    "text": "Transaction: Cloud compute monthly billing - Atlassian Cloud at Nimbus Cloud GmbH (MCC 5734) for 2214.98 EUR. Category: Software",
+    "metadata": {
+      "regulation": "transaction-history",
+      "category": "Software",
+      "merchantId": "MERCHANT-CL-002"
+    }
+  },
+  {
+    "text": "Transaction: Catering for workshop at Bistro Parisien (MCC 5812) for 2643.39 EUR. Category: Meals & Entertainment",
+    "metadata": {
+      "regulation": "transaction-history",
+      "category": "Meals & Entertainment",
+      "merchantId": "MERCHANT-CL-003"
+    }
+  },
+  {
+    "text": "Transaction: Restaurant bill table 28 at Bistro Parisien (MCC 5812) for 2901.27 EUR. Category: Meals & Entertainment",
+    "metadata": {
+      "regulation": "transaction-history",
+      "category": "Meals & Entertainment",
+      "merchantId": "MERCHANT-CL-003"
+    }
+  },
+  {
+    "text": "Transaction: Restaurant bill table 33 at Trattoria Verde (MCC 5812) for 3474.29 EUR. Category: Meals & Entertainment",
+    "metadata": {
+      "regulation": "transaction-history",
+      "category": "Meals & Entertainment",
+      "merchantId": "MERCHANT-CL-004"
+    }
+  },
+  {
+    "text": "Transaction: Catering for workshop at Trattoria Verde (MCC 5812) for 3068.83 EUR. Category: Meals & Entertainment",
+    "metadata": {
+      "regulation": "transaction-history",
+      "category": "Meals & Entertainment",
+      "merchantId": "MERCHANT-CL-004"
+    }
+  },
+  {
+    "text": "Transaction: Airport transfer and parking at Iberia Airlines (MCC 4511) for 3122.49 EUR. Category: Travel",
+    "metadata": {
+      "regulation": "transaction-history",
+      "category": "Travel",
+      "merchantId": "MERCHANT-CL-005"
+    }
+  },
+  {
+    "text": "Transaction: Flight ticket Berlin return at Iberia Airlines (MCC 4511) for 3850.65 EUR. Category: Travel",
+    "metadata": {
+      "regulation": "transaction-history",
+      "category": "Travel",
+      "merchantId": "MERCHANT-CL-005"
+    }
+  },
+  {
+    "text": "Transaction: Train fare to Lisbon at Alpine Rail (MCC 4511) for 3635.33 EUR. Category: Travel",
+    "metadata": {
+      "regulation": "transaction-history",
+      "category": "Travel",
+      "merchantId": "MERCHANT-CL-006"
+    }
+  },
+  {
+    "text": "Transaction: Airport transfer and parking at Alpine Rail (MCC 4511) for 1960.73 EUR. Category: Travel",
+    "metadata": {
+      "regulation": "transaction-history",
+      "category": "Travel",
+      "merchantId": "MERCHANT-CL-006"
+    }
+  },
+  {
+    "text": "Transaction: IT consulting retainer month 36 at Lex & Partner (MCC 8742) for 3023.02 EUR. Category: Professional Services",
+    "metadata": {
+      "regulation": "transaction-history",
+      "category": "Professional Services",
+      "merchantId": "MERCHANT-CL-007"
+    }
+  },
+  {
+    "text": "Transaction: Legal advisory fees - contract review at Lex & Partner (MCC 8742) for 4281.16 EUR. Category: Professional Services",
+    "metadata": {
+      "regulation": "transaction-history",
+      "category": "Professional Services",
+      "merchantId": "MERCHANT-CL-007"
+    }
+  },
+  {
+    "text": "Transaction: Legal advisory fees - contract review at Northwind Consulting (MCC 8742) for 1808.23 EUR. Category: Professional Services",
+    "metadata": {
+      "regulation": "transaction-history",
+      "category": "Professional Services",
+      "merchantId": "MERCHANT-CL-008"
+    }
+  },
+  {
+    "text": "Transaction: Audit services invoice 12 at Northwind Consulting (MCC 8742) for 4643.23 EUR. Category: Professional Services",
+    "metadata": {
+      "regulation": "transaction-history",
+      "category": "Professional Services",
+      "merchantId": "MERCHANT-CL-008"
+    }
+  },
+  {
+    "text": "Transaction: Stationery restock at OfficeDepot EU (MCC 5943) for 1895.2 EUR. Category: Office Supplies",
+    "metadata": {
+      "regulation": "transaction-history",
+      "category": "Office Supplies",
+      "merchantId": "MERCHANT-CL-009"
+    }
+  },
+  {
+    "text": "Transaction: Printer toner and paper order at OfficeDepot EU (MCC 5943) for 2579.88 EUR. Category: Office Supplies",
+    "metadata": {
+      "regulation": "transaction-history",
+      "category": "Office Supplies",
+      "merchantId": "MERCHANT-CL-009"
+    }
+  },
+  {
+    "text": "Transaction: Stationery restock at PaperPlus (MCC 5943) for 3193.05 EUR. Category: Office Supplies",
+    "metadata": {
+      "regulation": "transaction-history",
+      "category": "Office Supplies",
+      "merchantId": "MERCHANT-CL-010"
+    }
+  },
+  {
+    "text": "Transaction: Whiteboards and markers for office at PaperPlus (MCC 5943) for 3117.95 EUR. Category: Office Supplies",
+    "metadata": {
+      "regulation": "transaction-history",
+      "category": "Office Supplies",
+      "merchantId": "MERCHANT-CL-010"
+    }
+  },
+  {
+    "text": "Transaction: Wire transfer processing fee at EuroFX Brokers (MCC 6012) for 1565.26 EUR. Category: Financial Services",
+    "metadata": {
+      "regulation": "transaction-history",
+      "category": "Financial Services",
+      "merchantId": "MERCHANT-CL-011"
+    }
+  },
+  {
+    "text": "Transaction: Crypto purchase EUR to USDT at EuroFX Brokers (MCC 6012) for 3647.8 EUR. Category: Financial Services",
+    "metadata": {
+      "regulation": "transaction-history",
+      "category": "Financial Services",
+      "merchantId": "MERCHANT-CL-011"
+    }
+  },
+  {
+    "text": "Transaction: Currency exchange EUR to USD at Lisbon Credit Union (MCC 6012) for 3304.18 EUR. Category: Financial Services",
+    "metadata": {
+      "regulation": "transaction-history",
+      "category": "Financial Services",
+      "merchantId": "MERCHANT-CL-012"
+    }
+  },
+  {
+    "text": "Transaction: Wire transfer processing fee at Lisbon Credit Union (MCC 6012) for 274.03 EUR. Category: Financial Services",
+    "metadata": {
+      "regulation": "transaction-history",
+      "category": "Financial Services",
+      "merchantId": "MERCHANT-CL-012"
+    }
+  },
+  {
+    "text": "Transaction: Medical equipment order - 26 units at MediSupply AG (MCC 8099) for 159.07 EUR. Category: Healthcare",
+    "metadata": {
+      "regulation": "transaction-history",
+      "category": "Healthcare",
+      "merchantId": "MERCHANT-CL-013"
+    }
+  },
+  {
+    "text": "Transaction: Occupational health screening at MediSupply AG (MCC 8099) for 3883.62 EUR. Category: Healthcare",
+    "metadata": {
+      "regulation": "transaction-history",
+      "category": "Healthcare",
+      "merchantId": "MERCHANT-CL-013"
+    }
+  },
+  {
+    "text": "Transaction: Occupational health screening at Clinica Sol (MCC 8099) for 1209.69 EUR. Category: Healthcare",
+    "metadata": {
+      "regulation": "transaction-history",
+      "category": "Healthcare",
+      "merchantId": "MERCHANT-CL-014"
+    }
+  },
+  {
+    "text": "Transaction: Medical equipment order - 4 units at Clinica Sol (MCC 8099) for 4983.54 EUR. Category: Healthcare",
+    "metadata": {
+      "regulation": "transaction-history",
+      "category": "Healthcare",
+      "merchantId": "MERCHANT-CL-014"
+    }
+  },
+  {
+    "text": "Transaction: Clothing order 21 items at Amazon EU (MCC 5311) for 2101.5 EUR. Category: Retail",
+    "metadata": {
+      "regulation": "transaction-history",
+      "category": "Retail",
+      "merchantId": "MERCHANT-CL-015"
+    }
+  },
+  {
+    "text": "Transaction: Electronics purchase - headphones at Amazon EU (MCC 5311) for 1975.26 EUR. Category: Retail",
+    "metadata": {
+      "regulation": "transaction-history",
+      "category": "Retail",
+      "merchantId": "MERCHANT-CL-015"
+    }
+  },
+  {
+    "text": "Transaction: Electronics purchase - headphones at Galeries Nord (MCC 5311) for 69.15 EUR. Category: Retail",
+    "metadata": {
+      "regulation": "transaction-history",
+      "category": "Retail",
+      "merchantId": "MERCHANT-CL-016"
+    }
+  },
+  {
+    "text": "Transaction: Clothing order 35 items at Galeries Nord (MCC 5311) for 4776.43 EUR. Category: Retail",
+    "metadata": {
+      "regulation": "transaction-history",
+      "category": "Retail",
+      "merchantId": "MERCHANT-CL-016"
+    }
+  },
+  {
+    "text": "Transaction: Electricity bill March at Stadtwerke Energie (MCC 4900) for 2101.39 EUR. Category: Utilities",
+    "metadata": {
+      "regulation": "transaction-history",
+      "category": "Utilities",
+      "merchantId": "MERCHANT-CL-017"
+    }
+  },
+  {
+    "text": "Transaction: Gas supply invoice November at Stadtwerke Energie (MCC 4900) for 3818.01 EUR. Category: Utilities",
+    "metadata": {
+      "regulation": "transaction-history",
+      "category": "Utilities",
+      "merchantId": "MERCHANT-CL-017"
+    }
+  },
+  {
+    "text": "Transaction: Water and sewage charges at EDP Comercial (MCC 4900) for 3734.14 EUR. Category: Utilities",
+    "metadata": {
+      "regulation": "transaction-history",
+      "category": "Utilities",
+      "merchantId": "MERCHANT-CL-018"
+    }
+  },
+  {
+    "text": "Transaction: Gas supply invoice November at EDP Comercial (MCC 4900) for 4606.47 EUR. Category: Utilities",
+    "metadata": {
+      "regulation": "transaction-history",
+      "category": "Utilities",
+      "merchantId": "MERCHANT-CL-018"
+    }
+  },
+  {
+    "text": "Transaction: Monthly streaming subscription at StreamBox (MCC 5968) for 2322.25 EUR. Category: Subscriptions",
+    "metadata": {
+      "regulation": "transaction-history",
+      "category": "Subscriptions",
+      "merchantId": "MERCHANT-CL-019"
+    }
+  },
+  {
+    "text": "Transaction: Magazine subscription renewal at StreamBox (MCC 5968) for 1793.83 EUR. Category: Subscriptions",
+    "metadata": {
+      "regulation": "transaction-history",
+      "category": "Subscriptions",
+      "merchantId": "MERCHANT-CL-019"
+    }
+  },
+  {
+    "text": "Transaction: Monthly streaming subscription at FitLife Clubs (MCC 5968) for 111.88 EUR. Category: Subscriptions",
+    "metadata": {
+      "regulation": "transaction-history",
+      "category": "Subscriptions",
+      "merchantId": "MERCHANT-CL-020"
+    }
+  },
+  {
+    "text": "Transaction: Magazine subscription renewal at FitLife Clubs (MCC 5968) for 3942.96 EUR. Category: Subscriptions",
+    "metadata": {
+      "regulation": "transaction-history",
+      "category": "Subscriptions",
+      "merchantId": "MERCHANT-CL-020"
+    }
+  },
+  {
+    "text": "Transaction: Wire transfer processing fee at QuickCash Exchange (MCC 6012) for 3158.34 EUR. Category: Financial Services",
+    "metadata": {
+      "regulation": "transaction-history",
+      "category": "Financial Services",
+      "merchantId": "MERCHANT-RA-001"
+    }
+  },
+  {
+    "text": "Transaction: Crypto purchase EUR to USDT at QuickCash Exchange (MCC 6012) for 4115.97 EUR. Category: Financial Services",
+    "metadata": {
+      "regulation": "transaction-history",
+      "category": "Financial Services",
+      "merchantId": "MERCHANT-RA-001"
+    }
+  },
+  {
+    "text": "Transaction: Audit services invoice 22 at GlobalDigital Services (MCC 8742) for 4927.85 EUR. Category: Professional Services",
+    "metadata": {
+      "regulation": "transaction-history",
+      "category": "Professional Services",
+      "merchantId": "MERCHANT-RA-002"
+    }
+  },
+  {
+    "text": "Transaction: Architecture design consultancy at GlobalDigital Services (MCC 8742) for 2159.4 EUR. Category: Professional Services",
+    "metadata": {
+      "regulation": "transaction-history",
+      "category": "Professional Services",
+      "merchantId": "MERCHANT-RA-002"
+    }
+  },
+  {
+    "text": "Transaction: Pharmacy supplies for first-aid kits at MedTrade Supplies (MCC 8099) for 3152.77 EUR. Category: Healthcare",
+    "metadata": {
+      "regulation": "transaction-history",
+      "category": "Healthcare",
+      "merchantId": "MERCHANT-RA-003"
+    }
+  },
+  {
+    "text": "Transaction: Dental clinic invoice at MedTrade Supplies (MCC 8099) for 3512.93 EUR. Category: Healthcare",
+    "metadata": {
+      "regulation": "transaction-history",
+      "category": "Healthcare",
+      "merchantId": "MERCHANT-RA-003"
+    }
+  },
+  {
+    "text": "Transaction: SaaS platform fee Q2 - Datadog at Baltic Web Studio (MCC 5734) for 1592.77 EUR. Category: Software",
+    "metadata": {
+      "regulation": "transaction-history",
+      "category": "Software",
+      "merchantId": "MERCHANT-RA-004"
+    }
+  },
+  {
+    "text": "Transaction: Annual license renewal - Datadog enterprise plan at Baltic Web Studio (MCC 5734) for 4471.26 EUR. Category: Software",
+    "metadata": {
+      "regulation": "transaction-history",
+      "category": "Software",
+      "merchantId": "MERCHANT-RA-004"
+    }
+  },
+  {
+    "text": "Transaction: Clothing order 6 items at LuxeGoods Outlet (MCC 5311) for 2448.58 EUR. Category: Retail",
+    "metadata": {
+      "regulation": "transaction-history",
+      "category": "Retail",
+      "merchantId": "MERCHANT-RB-001"
+    }
+  },
+  {
+    "text": "Transaction: Electronics purchase - headphones at LuxeGoods Outlet (MCC 5311) for 290.74 EUR. Category: Retail",
+    "metadata": {
+      "regulation": "transaction-history",
+      "category": "Retail",
+      "merchantId": "MERCHANT-RB-001"
+    }
+  },
+  {
+    "text": "Transaction: Online order #7 at Velvet Boutique (MCC 5311) for 2924.5 EUR. Category: Retail",
+    "metadata": {
+      "regulation": "transaction-history",
+      "category": "Retail",
+      "merchantId": "MERCHANT-RB-002"
+    }
+  },
+  {
+    "text": "Transaction: Clothing order 33 items at Velvet Boutique (MCC 5311) for 1299.43 EUR. Category: Retail",
+    "metadata": {
+      "regulation": "transaction-history",
+      "category": "Retail",
+      "merchantId": "MERCHANT-RB-002"
+    }
+  },
+  {
+    "text": "Transaction: Airport transfer and parking at Sunset Travel Deals (MCC 4511) for 2363.47 EUR. Category: Travel",
+    "metadata": {
+      "regulation": "transaction-history",
+      "category": "Travel",
+      "merchantId": "MERCHANT-RB-003"
+    }
+  },
+  {
+    "text": "Transaction: Train fare to Amsterdam at Sunset Travel Deals (MCC 4511) for 4133.56 EUR. Category: Travel",
+    "metadata": {
+      "regulation": "transaction-history",
+      "category": "Travel",
+      "merchantId": "MERCHANT-RB-003"
+    }
+  },
+  {
+    "text": "Transaction: Gift cards bulk purchase at Iberic Gifts (MCC 5311) for 4364.88 EUR. Category: Retail",
+    "metadata": {
+      "regulation": "transaction-history",
+      "category": "Retail",
+      "merchantId": "MERCHANT-RB-004"
+    }
+  },
+  {
+    "text": "Transaction: Electronics purchase - headphones at Iberic Gifts (MCC 5311) for 1262.39 EUR. Category: Retail",
+    "metadata": {
+      "regulation": "transaction-history",
+      "category": "Retail",
+      "merchantId": "MERCHANT-RB-004"
+    }
+  },
+  {
+    "text": "Transaction: Magazine subscription renewal at PrimeStream Plus (MCC 5968) for 3817.57 EUR. Category: Subscriptions",
+    "metadata": {
+      "regulation": "transaction-history",
+      "category": "Subscriptions",
+      "merchantId": "MERCHANT-RC-001"
+    }
+  },
+  {
+    "text": "Transaction: Gym membership monthly fee at PrimeStream Plus (MCC 5968) for 2930.81 EUR. Category: Subscriptions",
+    "metadata": {
+      "regulation": "transaction-history",
+      "category": "Subscriptions",
+      "merchantId": "MERCHANT-RC-001"
+    }
+  },
+  {
+    "text": "Transaction: SaaS platform fee Q4 - Atlassian Cloud at CloudVault Backup (MCC 5734) for 4481.3 EUR. Category: Software",
+    "metadata": {
+      "regulation": "transaction-history",
+      "category": "Software",
+      "merchantId": "MERCHANT-RC-002"
+    }
+  },
+  {
+    "text": "Transaction: Cloud compute monthly billing - AWS at CloudVault Backup (MCC 5734) for 828.55 EUR. Category: Software",
+    "metadata": {
+      "regulation": "transaction-history",
+      "category": "Software",
+      "merchantId": "MERCHANT-RC-002"
+    }
+  },
+  {
+    "text": "Transaction: Gym membership monthly fee at EasyFit Online (MCC 5968) for 2256.56 EUR. Category: Subscriptions",
+    "metadata": {
+      "regulation": "transaction-history",
+      "category": "Subscriptions",
+      "merchantId": "MERCHANT-RC-003"
+    }
+  },
+  {
+    "text": "Transaction: Monthly streaming subscription at EasyFit Online (MCC 5968) for 4254.55 EUR. Category: Subscriptions",
+    "metadata": {
+      "regulation": "transaction-history",
+      "category": "Subscriptions",
+      "merchantId": "MERCHANT-RC-003"
+    }
+  }
+]
